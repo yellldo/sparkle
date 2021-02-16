@@ -20,6 +20,7 @@
     <modules>
         <module>sparkle-dependencies</module>
         <module>sparkle-core</module>
+        <module>sparkle-parent</module>
     </modules>
 
 </project>
