@@ -9,7 +9,6 @@
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-
     <properties>
         <revision>1.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,6 +20,7 @@
         <module>sparkle-dependencies</module>
         <module>sparkle-core</module>
         <module>sparkle-parent</module>
+        <module>sparkle-starters</module>
     </modules>
 
     <build>
