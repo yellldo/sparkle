@@ -18,7 +18,7 @@
     </properties>
 
     <modules>
-        <module>sparkle-starter</module>
+        <module>sparkle-starter-mybatis-plus</module>
     </modules>
 
     <dependencies>

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.sparkle.starter.mybatis.plus.configuration.AutoConfiguration
+org.springframework.boot.autoconfigure.AutoConfigurationImportFilter=\
+ com.sparkle.starter.mybatis.plus.filter.AutoConfigurationExclusionFilter
