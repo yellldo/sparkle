@@ -21,7 +21,7 @@
         <module>sparkle-core</module>
         <module>sparkle-parent</module>
         <module>sparkle-starters</module>
-        <module>sparkle-starter-mybatis-plus</module>
+        <module>sparkle-generator</module>
     </modules>
 
     <build>
