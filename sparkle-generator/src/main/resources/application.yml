@@ -1,0 +1,25 @@
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: generator
+  datasource:
+    dynamic:
+      p6spy: true
+      primary: mysql
+      datasource:
+        mysql:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: root
+          password: 123456
+          url: jdbc:mysql://192.227.177.107:13306/nacos_devtest_prod?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b7
+server:
+  port: 8888
+mybatis-plus:
+  type-aliases-package: com.sparkle.generator.entity
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    jdbc-type-for-null: null
+  global-config:
+    # 关闭 mybatis-plus的 banner
+    banner: false

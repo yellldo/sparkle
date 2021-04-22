@@ -27,6 +27,10 @@ public class R<T> extends BaseResponse {
         return new R<Object>().data(data);
     }
 
+    public static R ok() {
+        return new R();
+    }
+
 
     public T getData() {
         return data;

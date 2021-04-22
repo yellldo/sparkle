@@ -32,4 +32,10 @@ public class BaseException extends RuntimeException {
         this.setErrorCode(r.getStatus());
         this.setErrorMessage(r.getMessage());
     }
+
+    public BaseException(String message) {
+        super();
+        this.setErrorCode("500");
+        this.setErrorMessage(message);
+    }
 }

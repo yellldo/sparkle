@@ -27,6 +27,10 @@ public class BusinessException extends BaseException {
         this.args = args;
     }
 
+    public BusinessException(String message) {
+        super(message);
+    }
+
     public BusinessException(R r) {
         super(r);
     }

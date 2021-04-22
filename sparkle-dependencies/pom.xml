@@ -39,6 +39,11 @@
         <mybatis.plus.version>3.2.0</mybatis.plus.version>
         <dynamic.datasource.version>2.5.7</dynamic.datasource.version>
         <redisson.version>3.11.5</redisson.version>
+        <collections.version>3.2.2</collections.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <guava.version>28.0-jre</guava.version>
+        <freemarker.version>2.3.28</freemarker.version>
+        <ip2region.version>1.7</ip2region.version>
     </properties>
 
     <dependencyManagement>
@@ -145,6 +150,31 @@
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -10,16 +10,17 @@ package com.sparkle.core.exception;
  */
 public enum SysErrorEnum implements IErrorCode {
 
-    /**
-     * 未知错误
-     */
-    UNKNOWN_ERROR("-1"),
-    VALIDATION_ERROR("-11"),
+
+    VALIDATION_ERROR("-11", ""),
+    GENERA_EMPTY("-2", "代码生成配置为空"),
+    FILE_DOWNLOAD_ERROR("-3", "文件下载异常"),
     ;
     private String code;
+    private String msg;
 
-    SysErrorEnum(final String code) {
+    SysErrorEnum(final String code, final String msg) {
         this.code = code;
+        this.msg = msg;
     }
 
 
