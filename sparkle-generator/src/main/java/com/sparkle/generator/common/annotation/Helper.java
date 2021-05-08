@@ -1,4 +1,4 @@
-package com.sparkle.generator.common.controller.annotation;
+package com.sparkle.generator.common.annotation;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;

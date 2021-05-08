@@ -2,9 +2,9 @@ package com.sparkle.generator.controller;
 
 import com.sparkle.core.entity.R;
 import com.sparkle.core.exception.base.BusinessException;
-import com.sparkle.generator.common.controller.BaseController;
 import com.sparkle.generator.entity.GeneratorConfig;
 import com.sparkle.generator.service.IGeneratorConfigService;
+import com.sparkle.starter.mybatis.plus.controller.BaseController;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

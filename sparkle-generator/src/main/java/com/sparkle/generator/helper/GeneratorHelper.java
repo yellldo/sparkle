@@ -2,7 +2,7 @@ package com.sparkle.generator.helper;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.io.Files;
-import com.sparkle.generator.common.controller.annotation.Helper;
+import com.sparkle.generator.common.annotation.Helper;
 import com.sparkle.generator.entity.Column;
 import com.sparkle.generator.entity.GeneratorConfig;
 import com.sparkle.generator.entity.GeneratorConstant;

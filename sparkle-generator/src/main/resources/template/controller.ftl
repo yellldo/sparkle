@@ -2,7 +2,7 @@ package com.rrtx.adm.system.controller;
 
 import cn.afterturn.easypoi.excel.ExcelExportUtil;
 import cn.afterturn.easypoi.excel.entity.TemplateExportParams;
-import com.sparkle.generator.common.controller.BaseController;
+import com.sparkle.starter.mybatis.plus.controller.BaseController;
 import com.sparkle.core.entity.R;
 import com.sparkle.starter.mybatis.plus.entity.QueryRequest;
 import com.sparkle.core.exception.base.BusinessException;
