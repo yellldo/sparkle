@@ -16,7 +16,7 @@ import java.util.List;
 public interface IBaseService<T> extends IService<T> {
 
     /**
-     * 查询单个实力
+     * 查询单个实体
      *
      * @param entity
      * @return

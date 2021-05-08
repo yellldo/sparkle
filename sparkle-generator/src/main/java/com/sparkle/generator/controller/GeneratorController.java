@@ -65,14 +65,14 @@ public class GeneratorController extends BaseController {
 
             String className = name;
             if (GeneratorConfig.TRIM_YES.equals(generatorConfig.getIsTrim())) {
-                className = name.toLowerCase().replace(generatorConfig.getTrimValue(), "");
+                className = name.replace(generatorConfig.getTrimValue(), "");
             }
 
             generatorConfig.setTableName(name);
             generatorConfig.setClassName(AdmUtil.underscoreToCamel(className));
             generatorConfig.setTableComment(remark);
             // 生成代码到临时目录
-            List<Column> columns = generatorService.getColumns(GeneratorConstant.DATABASE_TYPE, GeneratorConstant.DATABASE_NAME, name);
+            List<Column> columns = generatorService.getColumns(GeneratorConstant.DATABASE_TYPE, name, GeneratorConstant.DATABASE_NAME);
             generatorHelper.generateEntityFile(columns, generatorConfig);
             generatorHelper.generateMapperFile(columns, generatorConfig);
             generatorHelper.generateMapperXmlFile(columns, generatorConfig);

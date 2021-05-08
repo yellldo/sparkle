@@ -1,64 +1,65 @@
-package ${package.ServiceImpl};
+package ${basePackage}.${serviceImplPackage};
 
-import ${package.Entity}.${entity};
-import ${package.Mapper}.${entity}Mapper;
-import ${package.Service}.I${entity}Service;
+import ${basePackage}.${entityPackage}.${className};
+import ${basePackage}.${mapperPackage}.${className}Mapper;
+import ${basePackage}.${servicePackage}.I${className}Service;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.rrtx.fap.starter.mybatis.plus.entity.QueryRequest;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
-
-
-import java.util.List;
-
 /**
- * ClassName: ${entity}ServiceImpl<br>
- * Description: I${entity}Service实现 <br>
- * Company: rrtx
+ * ClassName: ${className}ServiceImpl<br>
+ * Description: ${tableComment} Service实现 <br>
  *
  * @author ${author}
  * @version v1.0.0    ${date}  ${author}    由Generator自动创建
  */
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class ${entity}ServiceImpl extends ServiceImpl<${entity}Mapper, ${entity}> implements I${entity}Service {
+public class ${className}ServiceImpl extends ServiceImpl
+<${className}Mapper, ${className}> implements I${className}Service {
 
     @Autowired
-    private ${entity}Mapper ${entity?uncap_first}Mapper;
+    private ${className}Mapper ${className?uncap_first}Mapper;
 
     @Override
-    public IPage<${entity}> find${entity}s(QueryRequest request, LambdaQueryWrapper<${entity}> wrapper) {
-        Page<${entity}> page = new Page<>(request.getPageNum(), request.getPageSize());
-        return this.page(page, wrapper);
+    public IPage<${className}> find${className}s(QueryRequest request, ${className} ${className?uncap_first}) {
+        LambdaQueryWrapper<${className}> queryWrapper = new LambdaQueryWrapper<>();
+        // TODO 设置查询条件
+        Page<${className}> page = new Page<>(request.getPageNum(), request.getPageSize());
+        return this.page(page, queryWrapper);
     }
 
     @Override
-    public List<${entity}> find${entity}s(LambdaQueryWrapper<${entity}> wrapper) {
-		return this.list(wrapper);
+    public List<${className}> find${className}s(${className} ${className?uncap_first}) {
+	    LambdaQueryWrapper<${className}> queryWrapper = new LambdaQueryWrapper<>();
+		// TODO 设置查询条件
+		return this.baseMapper.selectList(queryWrapper);
     }
 
     @Override
-    @Transactional(rollbackFor = Exception.class)
-    public void create${entity}(${entity} ${entity?uncap_first}) {
-        this.save(${entity?uncap_first});
+    @Transactional
+    public void create${className}(${className} ${className?uncap_first}) {
+        this.save(${className?uncap_first});
     }
 
     @Override
-    @Transactional(rollbackFor = Exception.class)
-    public void update${entity}(${entity} ${entity?uncap_first}) {
-        this.saveOrUpdate(${entity?uncap_first});
+    @Transactional
+    public void update${className}(${className} ${className?uncap_first}) {
+        this.saveOrUpdate(${className?uncap_first});
     }
 
     @Override
-    @Transactional(rollbackFor = Exception.class)
-    public void delete${entity}(LambdaQueryWrapper<${entity}> wrapper) {
-	    this.remove(wrapper);
+    @Transactional
+    public void delete${className}(${className} ${className?uncap_first}) {
+        LambdaQueryWrapper<${className}> wapper = new LambdaQueryWrapper<>();
+	    // TODO 设置删除条件
+	    this.remove(wapper);
 	}
 }

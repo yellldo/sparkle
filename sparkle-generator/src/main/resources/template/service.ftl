@@ -1,60 +1,59 @@
-package ${package.Service};
+package ${basePackage}.${servicePackage};
 
-import ${package.Entity}.${entity};
+import ${basePackage}.${entityPackage}.${className};
 
-import com.rrtx.fap.starter.mybatis.plus.entity.QueryRequest;
+import com.sparkle.starter.mybatis.plus.entity.QueryRequest;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
-
-
 
 import java.util.List;
 
 /**
- * ClassName: I${entity}Service<br>
- * Description: ${entity}Service接口 <br>
- * Company: rrtx
+ * ClassName: I${className}Service<br>
+ * Description: ${tableComment} Service接口 <br>
  *
  * @author ${author}
  * @version v1.0.0    ${date}  ${author}    由Generator自动创建
  */
-public interface I${entity}Service extends IService<${entity}> {
+public interface I${className}Service extends IService<${className}> {
     /**
      * 查询（分页）
      *
      * @param request QueryRequest
-     * @param wrapper LambdaQueryWrapper<${entity}>
-     * @return IPage<${entity}>
+     * @param ${className?uncap_first} ${className?uncap_first}
+     * @return IPage<${className}>
      */
-    IPage<${entity}> find${entity}s(QueryRequest request, LambdaQueryWrapper<${entity}> wrapper);
+    IPage<${className}> find${className}s(QueryRequest request, ${className} ${className?uncap_first});
+
+
+    IPage<${className}> find${className}s(QueryRequest request, ${className} ${className?uncap_first});
 
     /**
      * 查询（所有）
      *
-     * @param wrapper LambdaQueryWrapper<${entity}>
-     * @return List<${entity}>
+     * @param ${className?uncap_first} ${className?uncap_first}
+     * @return List<${className}>
      */
-    List<${entity}> find${entity}s(LambdaQueryWrapper<${entity}> wrapper);
+    List<${className}> find${className}s(${className} ${className?uncap_first});
 
     /**
      * 新增
      *
-     * @param ${entity?uncap_first} ${entity?uncap_first}
+     * @param ${className?uncap_first} ${className?uncap_first}
      */
-    void create${entity}(${entity} ${entity?uncap_first});
+    void create${className}(${className} ${className?uncap_first});
 
     /**
      * 修改
      *
-     * @param ${entity?uncap_first} ${entity?uncap_first}
+     * @param ${className?uncap_first} ${className?uncap_first}
      */
-    void update${entity}(${entity} ${entity?uncap_first});
+    void update${className}(${className} ${className?uncap_first});
 
     /**
      * 删除
      *
-     * @param wrapper LambdaQueryWrapper<${entity}>
+     * @param ${className?uncap_first} ${className?uncap_first}
      */
-    void delete${entity}(LambdaQueryWrapper<${entity}> wrapper);
+    void delete${className}(${className} ${className?uncap_first});
 }

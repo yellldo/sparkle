@@ -1,11 +1,11 @@
-package ${package.Entity};
+package ${basePackage}.${entityPackage};
 
-<#--<#if table.hasDate>-->
-<#--import java.util.Date;-->
-<#--</#if>-->
-<#--<#if table.hasBigDecimal>-->
-<#--import java.math.BigDecimal;-->
-<#--</#if>-->
+<#if hasDate = true>
+import java.util.Date;
+</#if>
+<#if hasBigDecimal = true>
+import java.math.BigDecimal;
+</#if>
 
 import lombok.Data;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -14,28 +14,51 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 /**
- * ClassName: ${entity}<br>
- * Description: ${entity} Entity <br>
- * Company: rrtx
+ * ClassName: ${className}<br>
+ * Description: ${tableComment} Entity <br>
  *
  * @author ${author}
  * @version v1.0.0    ${date}  ${author}    由Generator自动创建
  */
 @Data
-@TableName("${table.name}")
-public class ${entity} {
+@TableName("${tableName}")
+public class ${className} {
 
-<#if table.fields??>
-    <#list table.fields as field>
+<#if columns??>
+    <#list columns as column>
     /**
-     * ${field.comment}
+     * ${column.remark}
      */
-        <#if field.keyFlag>
-    @TableId(value = "${field.name}", type = IdType.AUTO)
+        <#if column.isKey = true>
+    @TableId(value = "${column.name}", type = IdType.AUTO)
         <#else>
-    @TableField("${field.name}")
+    @TableField("${column.name}")
         </#if>
-    private ${field.propertyType} ${field.propertyName?uncap_first};
+        <#if (column.type = 'varchar' || column.type = 'text' || column.type = 'uniqueidentifier'
+        || column.type = 'varchar2' || column.type = 'nvarchar' || column.type = 'VARCHAR2'
+        || column.type = 'VARCHAR'|| column.type = 'CLOB' || column.type = 'char')>
+    private String ${column.field?uncap_first};
+
+        </#if>
+        <#if column.type = 'timestamp' || column.type = 'date' || column.type = 'datetime'||column.type = 'TIMESTAMP' || column.type = 'DATE' || column.type = 'DATETIME'>
+    private Date ${column.field?uncap_first};
+
+        </#if>
+        <#if column.type = 'int' || column.type = 'smallint'>
+    private Integer ${column.field?uncap_first};
+
+        </#if>
+        <#if column.type = 'bigint'>
+    private Long ${column.field?uncap_first};
+
+        </#if>
+        <#if column.type = 'tinyint'>
+    private Byte ${column.field?uncap_first};
+
+        </#if>
+        <#if column.type = 'decimal' || column.type = 'numeric'>
+    private BigDecimal ${column.field?uncap_first};
+        </#if>
     </#list>
 </#if>
 }

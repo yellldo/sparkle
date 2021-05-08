@@ -22,7 +22,7 @@ public class GeneratorConstant {
     /**
      * 生成代码的临时目录
      */
-    public static final String TEMP_PATH = "fap_gen_temp/";
+    public static final String TEMP_PATH = "sparkle_gen_temp/";
 
     /**
      * java类型文件后缀

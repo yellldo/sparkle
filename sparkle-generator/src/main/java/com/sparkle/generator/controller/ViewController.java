@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
  * @version : 1.0.0
  * @date : 2021/4/22
  */
-@Controller("generatorViews")
+@Controller
 public class ViewController {
 
 
