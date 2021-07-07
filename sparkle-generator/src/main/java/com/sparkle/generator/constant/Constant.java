@@ -17,7 +17,7 @@ public class Constant {
     public static final String ORDER_ASC = "asc";
 
     /**
-     * {@link com.sparkle.generator.common.controller.BaseController}
+     * {@link com.sparkle.starter.mybatis.plus.controller.BaseController}
      * getDataTable 中 HashMap 默认的初始化容量
      */
     public static final int DATA_MAP_INITIAL_CAPACITY = 4;

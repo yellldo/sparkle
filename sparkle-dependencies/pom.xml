@@ -112,7 +112,6 @@
             </dependency>
             <!-- 模板技术结束 -->
 
-
             <!-- Durid数据源 -->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -155,16 +154,6 @@
                 <groupId>commons-collections</groupId>
                 <artifactId>commons-collections</artifactId>
                 <version>${collections.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.freemarker</groupId>

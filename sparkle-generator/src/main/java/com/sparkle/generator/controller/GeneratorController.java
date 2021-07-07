@@ -55,7 +55,7 @@ public class GeneratorController extends BaseController {
     }
 
 
-    @GetMapping
+    @PostMapping
     public void generate(@NotBlank(message = "{required}") String name, String remark, HttpServletResponse response) throws FileDownloadException {
         try {
             GeneratorConfig generatorConfig = generatorConfigService.findGeneratorConfig();
