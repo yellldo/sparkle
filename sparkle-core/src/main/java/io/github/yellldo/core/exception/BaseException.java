@@ -1,6 +1,6 @@
-package com.sparkle.core.exception;
+package io.github.yellldo.core.exception;
 
-import com.sparkle.core.entity.R;
+import io.github.yellldo.core.entity.R;
 import lombok.Data;
 
 /**

@@ -1,8 +1,8 @@
-package com.sparkle.core.exception.base;
+package io.github.yellldo.core.exception.base;
 
-import com.sparkle.core.entity.R;
-import com.sparkle.core.exception.BaseException;
-import com.sparkle.core.exception.IErrorCode;
+import io.github.yellldo.core.entity.R;
+import io.github.yellldo.core.exception.BaseException;
+import io.github.yellldo.core.exception.IErrorCode;
 import lombok.Getter;
 
 /**

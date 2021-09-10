@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>sparkle-parent</artifactId>
-        <groupId>com.sparkle</groupId>
+        <groupId>io.github.yellldo</groupId>
         <version>${revision}</version>
         <relativePath>../sparkle-parent</relativePath>
     </parent>
@@ -18,7 +18,7 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.sparkle</groupId>
+            <groupId>io.github.yellldo</groupId>
             <artifactId>sparkle-starter-mybatis-plus</artifactId>
             <version>${revision}</version>
         </dependency>
@@ -27,7 +27,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.sparkle</groupId>
+            <groupId>io.github.yellldo</groupId>
             <artifactId>sparkle-core</artifactId>
             <version>${revision}</version>
         </dependency>

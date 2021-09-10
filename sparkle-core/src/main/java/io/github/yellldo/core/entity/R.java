@@ -1,4 +1,4 @@
-package com.sparkle.core.entity;
+package io.github.yellldo.core.entity;
 
 import lombok.ToString;
 

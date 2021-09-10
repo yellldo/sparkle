@@ -1,4 +1,4 @@
-package com.sparkle.core.util;
+package io.github.yellldo.core.util;
 
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;

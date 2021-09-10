@@ -1,4 +1,4 @@
-package com.sparkle.core.mask;
+package io.github.yellldo.core.mask;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;

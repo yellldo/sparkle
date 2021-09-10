@@ -1,4 +1,4 @@
-package com.sparkle.core.exception;
+package io.github.yellldo.core.exception;
 
 /**
  * ClassName : IErrorCode<br>

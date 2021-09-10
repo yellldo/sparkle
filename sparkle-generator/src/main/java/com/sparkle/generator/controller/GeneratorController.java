@@ -1,9 +1,9 @@
 package com.sparkle.generator.controller;
 
-import com.sparkle.core.entity.R;
-import com.sparkle.core.exception.SysErrorEnum;
-import com.sparkle.core.exception.base.BusinessException;
-import com.sparkle.core.exception.base.FileDownloadException;
+import io.github.yellldo.core.entity.R;
+import io.github.yellldo.core.exception.SysErrorEnum;
+import io.github.yellldo.core.exception.base.BusinessException;
+import io.github.yellldo.core.exception.base.FileDownloadException;
 import com.sparkle.generator.entity.Column;
 import com.sparkle.generator.entity.GeneratorConfig;
 import com.sparkle.generator.entity.GeneratorConstant;
@@ -16,7 +16,6 @@ import com.sparkle.starter.mybatis.plus.controller.BaseController;
 import com.sparkle.starter.mybatis.plus.entity.QueryRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

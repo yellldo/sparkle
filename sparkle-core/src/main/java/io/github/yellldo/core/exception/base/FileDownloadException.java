@@ -1,7 +1,7 @@
-package com.sparkle.core.exception.base;
+package io.github.yellldo.core.exception.base;
 
-import com.sparkle.core.exception.BaseException;
-import com.sparkle.core.exception.IErrorCode;
+import io.github.yellldo.core.exception.BaseException;
+import io.github.yellldo.core.exception.IErrorCode;
 
 /**
  * ClassName : FileDownloadException<br>

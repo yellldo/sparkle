@@ -1,7 +1,7 @@
-package com.sparkle.core.util;
+package io.github.yellldo.core.util;
 
 import cn.hutool.core.util.StrUtil;
-import com.sparkle.core.exception.base.ValidationException;
+import io.github.yellldo.core.exception.base.ValidationException;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;

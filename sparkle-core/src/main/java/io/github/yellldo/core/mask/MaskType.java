@@ -1,4 +1,4 @@
-package com.sparkle.core.mask;
+package io.github.yellldo.core.mask;
 
 import java.util.regex.Pattern;
 

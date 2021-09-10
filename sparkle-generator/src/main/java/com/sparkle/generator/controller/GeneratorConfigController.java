@@ -1,7 +1,7 @@
 package com.sparkle.generator.controller;
 
-import com.sparkle.core.entity.R;
-import com.sparkle.core.exception.base.BusinessException;
+import io.github.yellldo.core.entity.R;
+import io.github.yellldo.core.exception.base.BusinessException;
 import com.sparkle.generator.entity.GeneratorConfig;
 import com.sparkle.generator.service.IGeneratorConfigService;
 import com.sparkle.starter.mybatis.plus.controller.BaseController;
