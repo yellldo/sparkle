@@ -23,7 +23,7 @@
         <fastjson.version>1.2.60</fastjson.version>
         <druid-starter.version>1.1.10</druid-starter.version>
         <commons-lang3.version>3.9</commons-lang3.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.11.0</commons-io.version>
         <guava.version>27.0-jre</guava.version>
         <java.version>1.8</java.version>
         <jsch.version>0.1.55</jsch.version>
