@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.sparkle.starter.genid.SparkleGenidAutoConfiguration
+io.github.yellldo.starter.genid.SparkleGenidAutoConfiguration

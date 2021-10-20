@@ -2,7 +2,7 @@ package ${basePackage}.${servicePackage};
 
 import ${basePackage}.${entityPackage}.${className};
 
-import com.sparkle.starter.mybatis.plus.entity.QueryRequest;
+import QueryRequest;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
