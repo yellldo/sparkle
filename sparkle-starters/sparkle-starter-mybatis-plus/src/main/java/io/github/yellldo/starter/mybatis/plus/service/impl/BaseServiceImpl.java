@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * ClassName : BaseServiceImpl<br>
- * Description : TODO<br>
+ * Description : BaseServiceImpl<br>
  *
  * @author : sj
  * @version : 1.0.0

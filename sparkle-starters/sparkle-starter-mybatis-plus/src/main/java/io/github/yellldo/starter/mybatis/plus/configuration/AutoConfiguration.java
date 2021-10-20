@@ -14,6 +14,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @MapperScan("com.sparkle.starter.mybatis.plus.mapper")
-@ComponentScan("com.sparkle.starter.mybatis.plus")
+@ComponentScan("io.github.yellldo.starter.mybatis.plus")
 public class AutoConfiguration {
 }
