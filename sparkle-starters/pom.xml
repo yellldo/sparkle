@@ -21,6 +21,7 @@
         <module>sparkle-starter-mybatis-plus</module>
         <module>sparkle-starter-parent</module>
         <module>sparkle-starter-genid</module>
+        <module>sparkle-starter-oss</module>
     </modules>
 
     <dependencies>
